@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap");
+.navigator {
+  display: flex;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 100;
+}
+.navigator.active {
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+}
+.navigator.active > div {
+  right: 40px;
+}
+.navigator.active button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.navigator button {
+  transition: 200ms;
+  background-color: var(--mainC);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.navigator > div {
+  transition: 200ms;
+  position: absolute;
+  top: 0;
+  right: -33px;
+  height: 100%;
+  background-color: var(--mainC);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  z-index: -1;
+}
+
+.main-header {
+  background-color: var(--mainC);
+}
+
+.teams-container .team {
+  background-color: var(--mainC);
+  position: relative;
+  top: 0;
+  transition: top 350ms;
+}
+.teams-container .team:hover {
+  top: -8px;
+}
+.teams-container .team img {
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  max-height: 220px;
+  min-height: 220px;
+}
+
+#information .contributor {
+  background: var(--dark);
+  color: white;
+  border-radius: 20px;
+}
+#information .contributor img {
+  border: 2px white solid;
+}
+@media (max-width: 430px) {
+  #information .contributor {
+    min-width: 100% !important;
+  }
+}
+
+.y .articls li article {
+  position: relative;
+}
+.y .articls li article::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -22px;
+  border: 12px solid rgba(0, 0, 0, 0);
+  border-left-color: white;
+}
+.y .articls li img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 38px;
+  min-width: 38px;
+  max-height: 38px;
+  min-height: 38px;
+}
+.y .articls li .img.active img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  max-width: 20px !important;
+  min-width: 20px !important;
+  max-height: 20px !important;
+  min-height: 20px !important;
+}
+
+footer {
+  background-color: var(--dark);
+  color: white;
+}
+footer img {
+  min-height: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+}
+
+:root {
+  --mainC: #0BDA51	;
+  --secondC: #def0cd ;
+  --dark:#202124;
+}
+
+* {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+body {
+  background-color: var(--secondC);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainC);
+}/*# sourceMappingURL=main.css.map */
